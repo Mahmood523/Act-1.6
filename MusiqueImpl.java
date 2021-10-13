@@ -7,6 +7,11 @@ public class MusiqueImpl implements Musique {
 	public String genre;
 	public boolean verif;
 	
+	
+	public MusiqueImpl() {
+		super();
+	}
+
 	public MusiqueImpl(String titre, String autheur, String interprete, String genre) {
 		super();
 		this.titre = titre;
@@ -56,12 +61,13 @@ public class MusiqueImpl implements Musique {
 	}
 	
 	
+	
 
 	@Override
-	public String affichMusqiue(String titre,String autheur, String interprete, String genre) {
+	public void affichMusqiue(String titre,String autheur, String interprete, String genre) {
 		
 		System.out.println("Le titre : "+titre+" L'autheur : "+autheur+"L'interprete :"+interprete+" Le genre : "+genre);
-		// TODO Auto-generated method stub
+		
 		
 	}
 
@@ -72,6 +78,8 @@ public class MusiqueImpl implements Musique {
 		else verif = false;	
 		return verif;
 	}
+
+	
 
 	
 	
