@@ -78,10 +78,16 @@ public class MusiqueImpl implements Musique {
 		else verif = false;	
 		return verif;
 	}
-
+	
+	@Override
+	public void aff_Mus_Play(String titre, String genre) {
+		
+	}
+	@Override
+	public void add_Mus_Play(MusiqueImpl[] playliste, MusiqueImpl m2 ) {
 	
 
-	
+	}
 	
 
 }
